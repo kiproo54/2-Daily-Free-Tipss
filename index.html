@@ -1,0 +1,1049 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b09">
+
+  <title>2+ Odds Tips | Football Predictions</title>
+  <meta name="description" content="Discover daily football predictions, 2+ odds selections, match analysis and premium football tips.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #080b09;
+      --panel: #101512;
+      --green: #39f58a;
+      --white: #f5fff8;
+      --muted: #91a096;
+      --border: rgba(57,245,138,.17);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background:
+        radial-gradient(ellipse at 50% 0%, #123521 0%, transparent 42%),
+        var(--bg);
+      color: var(--white);
+      font-family: Inter, sans-serif;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    button { font: inherit; }
+
+    .container {
+      width: min(1160px, 90%);
+      margin: auto;
+    }
+
+    .green { color: var(--green); }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8,11,9,.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+
+    .nav-inner {
+      width: min(1200px, 92%);
+      min-height: 72px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: -.5px;
+    }
+
+    .brand-icon {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      background: var(--green);
+      color: #04130a;
+      border-radius: 13px;
+      font-size: 16px;
+      font-weight: 900;
+      box-shadow: 0 0 24px rgba(57,245,138,.18);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: #b5c0b8;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover { color: var(--green); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      background: var(--green);
+      color: #04140a;
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 900;
+      transition: .25s;
+      border: 1px solid var(--green);
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #69ffa6;
+      box-shadow: 0 10px 30px rgba(57,245,138,.15);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: #34443a;
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--green);
+      color: var(--green);
+      background: rgba(57,245,138,.05);
+    }
+
+    .hero {
+      min-height: 680px;
+      padding: 90px 0 75px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: center;
+      gap: 65px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 9px 13px;
+      background: rgba(57,245,138,.07);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      color: var(--green);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+      margin-bottom: 25px;
+    }
+
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 12px var(--green);
+    }
+
+    h1, h2, h3 { font-family: "Space Grotesk", sans-serif; }
+
+    .hero h1 {
+      font-size: clamp(48px, 6.4vw, 80px);
+      font-weight: 700;
+      line-height: .99;
+      letter-spacing: -4px;
+      margin-bottom: 23px;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--green);
+    }
+
+    .hero-description {
+      max-width: 510px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.9;
+      margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-note {
+      margin-top: 20px;
+      font-size: 11px;
+      color: #77867b;
+    }
+
+    .hero-note span { color: var(--green); }
+
+    /* Phone preview */
+
+    .phone-area {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .glow {
+      position: absolute;
+      width: 290px;
+      height: 350px;
+      top: 15%;
+      background: var(--green);
+      filter: blur(130px);
+      opacity: .13;
+    }
+
+    .phone {
+      position: relative;
+      z-index: 2;
+      width: 310px;
+      padding: 9px;
+      border: 1px solid #39443c;
+      border-radius: 36px;
+      background: linear-gradient(145deg, #313932, #080b09 35%);
+      box-shadow: 0 35px 100px #000, 0 0 50px rgba(57,245,138,.08);
+      transform: rotate(2deg);
+    }
+
+    .phone-screen {
+      min-height: 520px;
+      overflow: hidden;
+      border-radius: 28px;
+      background: #0b100d;
+      border: 1px solid #202a23;
+    }
+
+    .phone-top {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 17px 12px;
+      color: #b5c3b9;
+      font-size: 10px;
+    }
+
+    .app-heading { padding: 9px 17px 18px; }
+
+    .app-heading small {
+      color: var(--green);
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      font-weight: 900;
+    }
+
+    .app-heading h3 {
+      font-size: 24px;
+      margin-top: 7px;
+      letter-spacing: -.7px;
+    }
+
+    .app-heading p {
+      color: var(--muted);
+      font-size: 10px;
+      margin-top: 6px;
+    }
+
+    .odds-banner {
+      margin: 0 13px 15px;
+      padding: 17px;
+      border-radius: 16px;
+      border: 1px solid rgba(57,245,138,.27);
+      background: linear-gradient(130deg, #173c27, #101b14);
+    }
+
+    .odds-banner small {
+      font-size: 9px;
+      color: #a3d8b6;
+      letter-spacing: 1px;
+    }
+
+    .odds-big {
+      font-size: 39px;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      color: var(--green);
+      margin: 5px 0;
+    }
+
+    .odds-banner p {
+      color: #a8b8ad;
+      font-size: 9px;
+    }
+
+    .mini-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px 10px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .mini-title span {
+      color: var(--green);
+      font-size: 9px;
+    }
+
+    .mini-match {
+      margin: 0 12px 9px;
+      padding: 12px;
+      background: var(--panel);
+      border: 1px solid #202a23;
+      border-radius: 12px;
+    }
+
+    .mini-match-top {
+      display: flex;
+      justify-content: space-between;
+      color: #839187;
+      font-size: 8px;
+      margin-bottom: 12px;
+    }
+
+    .mini-teams {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+      font-size: 9px;
+      font-weight: 700;
+    }
+
+    .mini-pick {
+      color: var(--green);
+      background: rgba(57,245,138,.09);
+      border: 1px solid rgba(57,245,138,.16);
+      border-radius: 6px;
+      padding: 6px 7px;
+      font-size: 9px;
+      white-space: nowrap;
+    }
+
+    .phone-footer {
+      margin: 14px 12px;
+      text-align: center;
+      background: var(--green);
+      color: #05160b;
+      border-radius: 9px;
+      padding: 12px;
+      font-size: 10px;
+      font-weight: 900;
+    }
+
+    /* General sections */
+
+    section { padding: 90px 0; }
+
+    .section-heading {
+      max-width: 650px;
+      text-align: center;
+      margin: 0 auto 45px;
+    }
+
+    .section-heading > span {
+      color: var(--green);
+      font-size: 10px;
+      letter-spacing: 2px;
+      font-weight: 900;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(33px, 4.5vw, 49px);
+      letter-spacing: -2px;
+      margin: 13px 0;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .tips-section {
+      background: linear-gradient(180deg, #0b100d, #080b09);
+      border-top: 1px solid #19241c;
+      border-bottom: 1px solid #19241c;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .tip-card {
+      padding: 24px;
+      border: 1px solid #26342a;
+      background: linear-gradient(145deg, #121a14, #0c110e);
+      border-radius: 17px;
+      transition: .25s;
+    }
+
+    .tip-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(57,245,138,.55);
+    }
+
+    .tip-label {
+      display: inline-block;
+      padding: 7px 9px;
+      border-radius: 6px;
+      background: rgba(57,245,138,.09);
+      color: var(--green);
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: .8px;
+    }
+
+    .tip-card h3 {
+      font-size: 20px;
+      margin: 19px 0 8px;
+    }
+
+    .tip-card p {
+      font-size: 12px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .tip-example {
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #26342a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .tip-example small {
+      color: #85948a;
+      font-size: 10px;
+    }
+
+    .tip-example strong {
+      color: var(--green);
+      font-size: 17px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .feature {
+      padding: 28px;
+      border-radius: 17px;
+      border: 1px solid #202a23;
+      background: rgba(255,255,255,.015);
+    }
+
+    .feature-icon {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 13px;
+      background: rgba(57,245,138,.09);
+      border: 1px solid var(--border);
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.9;
+    }
+
+    /* Call to action */
+
+    .cta-wrap { padding: 30px 0 90px; }
+
+    .cta {
+      text-align: center;
+      padding: 65px 25px;
+      border: 1px solid rgba(57,245,138,.3);
+      border-radius: 25px;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(57,245,138,.15), transparent 65%),
+        #0c120e;
+    }
+
+    .cta-badge {
+      display: inline-block;
+      padding: 8px 13px;
+      border-radius: 50px;
+      background: rgba(57,245,138,.1);
+      color: var(--green);
+      font-size: 10px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .cta h2 {
+      font-size: clamp(37px, 5.5vw, 60px);
+      letter-spacing: -2.5px;
+      margin-bottom: 16px;
+    }
+
+    .cta p {
+      max-width: 550px;
+      margin: 0 auto 27px;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.9;
+    }
+
+    footer {
+      border-top: 1px solid #1c261f;
+      padding: 35px 0 100px;
+      text-align: center;
+      color: #758278;
+      font-size: 11px;
+      line-height: 2;
+    }
+
+    footer strong { color: var(--green); }
+
+    .disclaimer {
+      max-width: 700px;
+      margin: 15px auto 0;
+      font-size: 10px;
+      color: #67746a;
+    }
+
+    /* Floating download bar */
+
+    .floating {
+      position: fixed;
+      z-index: 90;
+      left: 50%;
+      bottom: 15px;
+      transform: translateX(-50%);
+      width: min(470px, calc(100% - 24px));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 10px 10px 16px;
+      border: 1px solid rgba(57,245,138,.35);
+      border-radius: 14px;
+      background: rgba(11,16,13,.96);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 12px 40px #000a;
+    }
+
+    .floating-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .floating-info strong { font-size: 11px; }
+
+    .floating-info span {
+      font-size: 8px;
+      color: var(--green);
+      font-weight: 800;
+      letter-spacing: .7px;
+    }
+
+    .floating .btn {
+      padding: 12px 15px;
+      font-size: 10px;
+      white-space: nowrap;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 50px;
+        padding-top: 65px;
+      }
+
+      .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons { justify-content: center; }
+      .phone { transform: none; }
+      .tips-grid, .features { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 580px) {
+      .nav-inner { min-height: 64px; }
+      .brand { font-size: 10px; gap: 8px; }
+      .brand-icon { width: 37px; height: 37px; }
+      .nav-links { display: none; }
+      .nav-inner > .btn { padding: 11px 13px; font-size: 10px; }
+
+      .hero {
+        padding: 57px 0 55px;
+        gap: 38px;
+      }
+
+      .hero h1 {
+        font-size: 51px;
+        letter-spacing: -2.7px;
+      }
+
+      .hero-description { font-size: 13px; }
+
+      .hero-buttons { flex-direction: column; }
+      .hero-buttons .btn { width: 100%; }
+
+      .phone { width: 285px; }
+      .phone-screen { min-height: 500px; }
+
+      section { padding: 65px 0; }
+      .section-heading { margin-bottom: 30px; }
+
+      .section-heading h2 {
+        font-size: 35px;
+        letter-spacing: -1.5px;
+      }
+
+      .tips-grid, .features { grid-template-columns: 1fr; }
+      .tip-card, .feature { padding: 23px; }
+
+      .cta { padding: 48px 18px; }
+      .cta h2 { font-size: 41px; }
+
+      .floating-info strong { font-size: 9px; }
+      .floating-info span { font-size: 7px; }
+
+      .floating .btn {
+        padding: 12px 11px;
+        font-size: 9px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="#">
+        <div class="brand-icon">2+</div>
+        <span>2+ ODDS <span class="green">TIPS</span></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#tips">Our Tips</a>
+        <a href="#features">Features</a>
+        <a href="#download">Get the App</a>
+      </div>
+
+      <a class="btn" href="https://play.google.com/store/apps/details?id=daily.drawsexpert"
+         target="_blank" rel="noopener noreferrer">
+        GET THE APP ↗
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <header class="container hero">
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          FOOTBALL PREDICTIONS, REIMAGINED
+        </div>
+
+        <h1>
+          Smart Picks.
+          <span>2+ Odds.</span>
+          Your Game.
+        </h1>
+
+        <p class="hero-description">
+          Get straight to the action with daily football predictions,
+          carefully presented 2+ odds selections and premium picks.
+          Your next matchday starts here.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn"
+             href="https://play.google.com/store/apps/details?id=daily.drawsexpert"
+             target="_blank" rel="noopener noreferrer">
+            ⚡ DOWNLOAD THE APP
+          </a>
+
+          <a class="btn btn-outline" href="#tips">
+            DISCOVER OUR TIPS ↓
+          </a>
+        </div>
+
+        <p class="hero-note">
+          <span>✓</span> Daily selections
+          &nbsp; <span>✓</span> Simple match insights
+          &nbsp; <span>✓</span> Easy-to-use app
+        </p>
+
+      </div>
+
+      <!-- PHONE PREVIEW -->
+      <div class="phone-area">
+        <div class="glow"></div>
+
+        <div class="phone">
+          <div class="phone-screen">
+
+            <div class="phone-top">
+              <span>⚽ 2+ ODDS TIPS</span>
+              <span>● ● ●</span>
+            </div>
+
+            <div class="app-heading">
+              <small>YOUR DAILY FOOTBALL EDGE</small>
+              <h3>Today's Picks</h3>
+              <p>Match selections at a glance.</p>
+            </div>
+
+            <div class="odds-banner">
+              <small>FEATURED SELECTION</small>
+              <div class="odds-big">2.00+</div>
+              <p>Explore featured football tips</p>
+            </div>
+
+            <div class="mini-title">
+              Sample Predictions
+              <span>2+ ODDS</span>
+            </div>
+
+            <div class="mini-match">
+              <div class="mini-match-top">
+                <span>EXAMPLE MATCH</span>
+                <span>FOOTBALL</span>
+              </div>
+              <div class="mini-teams">
+                <span>Team A</span>
+                <span class="mini-pick">1X</span>
+                <span>Team B</span>
+              </div>
+            </div>
+
+            <div class="mini-match">
+              <div class="mini-match-top">
+                <span>EXAMPLE MATCH</span>
+                <span>FOOTBALL</span>
+              </div>
+              <div class="mini-teams">
+                <span>Team C</span>
+                <span class="mini-pick">OVER 1.5</span>
+                <span>Team D</span>
+              </div>
+            </div>
+
+            <div class="mini-match">
+              <div class="mini-match-top">
+                <span>EXAMPLE MATCH</span>
+                <span>FOOTBALL</span>
+              </div>
+              <div class="mini-teams">
+                <span>Team E</span>
+                <span class="mini-pick">BTTS</span>
+                <span>Team F</span>
+              </div>
+            </div>
+
+            <div class="phone-footer">
+              YOUR NEXT PICK STARTS HERE ↗
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- TIPS SECTION -->
+    <section class="tips-section" id="tips">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span>OUR PREDICTION CATEGORIES</span>
+          <h2>Find Your <span class="green">2+ Odds</span></h2>
+          <p>
+            Discover different football markets and explore selections
+            based on your preferred style of play.
+          </p>
+        </div>
+
+        <div class="tips-grid">
+
+          <article class="tip-card reveal">
+            <span class="tip-label">⚡ DAILY PICKS</span>
+            <h3>2+ Odds Selections</h3>
+            <p>
+              Explore individual football selections and markets
+              with combined or individual odds around your target.
+            </p>
+            <div class="tip-example">
+              <small>Target odds</small>
+              <strong>2.00+</strong>
+            </div>
+          </article>
+
+          <article class="tip-card reveal">
+            <span class="tip-label">🎯 MATCH MARKETS</span>
+            <h3>Goal Predictions</h3>
+            <p>
+              Explore markets such as Over 1.5 Goals, Both Teams
+              to Score and other available match selections.
+            </p>
+            <div class="tip-example">
+              <small>Explore markets</small>
+              <strong>GOALS</strong>
+            </div>
+          </article>
+
+          <article class="tip-card reveal">
+            <span class="tip-label">👑 PREMIUM</span>
+            <h3>VIP Selections</h3>
+            <p>
+              Discover premium prediction options when available
+              and keep your daily selections organised.
+            </p>
+            <div class="tip-example">
+              <small>Premium picks</small>
+              <strong>VIP</strong>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span>WHY 2+ ODDS TIPS?</span>
+          <h2>Football Tips, <span class="green">Made Simple.</span></h2>
+          <p>
+            A clean football predictions experience designed to help
+            you find selections without unnecessary clutter.
+          </p>
+        </div>
+
+        <div class="features">
+
+          <article class="feature reveal">
+            <div class="feature-icon">⚽</div>
+            <h3>Daily Football Tips</h3>
+            <p>
+              Explore football selections for available matches
+              and competitions throughout the week.
+            </p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-icon">📊</div>
+            <h3>Multiple Markets</h3>
+            <p>
+              View different match markets in one place and choose
+              the selections that suit your preferences.
+            </p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-icon">📱</div>
+            <h3>Simple Experience</h3>
+            <p>
+              Enjoy an easy-to-navigate experience built around
+              football predictions and match selections.
+            </p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-icon">🔥</div>
+            <h3>Featured Picks</h3>
+            <p>
+              Find highlighted selections and explore the available
+              tips for the day's fixtures.
+            </p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-icon">👑</div>
+            <h3>Premium Options</h3>
+            <p>
+              Access VIP selections if offered in the app,
+              alongside the available free tips.
+            </p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature-icon">📅</div>
+            <h3>Matchday Ready</h3>
+            <p>
+              Keep your football selections organised and prepare
+              for the matches you want to follow.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL DOWNLOAD -->
+    <section class="cta-wrap" id="download">
+      <div class="container">
+
+        <div class="cta reveal">
+          <div class="cta-badge">⚡ YOUR FOOTBALL STARTS HERE</div>
+
+          <h2>Ready for <span class="green">2+ Odds?</span></h2>
+
+          <p>
+            Discover football predictions, explore different markets
+            and check out the available selections in one place.
+            Get started today.
+          </p>
+
+          <a class="btn"
+             href="https://play.google.com/store/apps/details?id=daily.drawsexpert"
+             target="_blank" rel="noopener noreferrer">
+            ▶ &nbsp; DOWNLOAD ON GOOGLE PLAY
+          </a>
+
+          <p style="font-size:10px;margin-top:18px;margin-bottom:0;">
+            Football predictions are uncertain. No selection guarantees a win.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <strong>2+ ODDS TIPS</strong>
+      <p>Football predictions. Your matchday. Your choice.</p>
+
+      <p class="disclaimer">
+        For informational purposes only. Betting involves financial risk.
+        Only participate where legally permitted, and only if you meet
+        the legal age requirement. Please gamble responsibly.
+      </p>
+
+      <p style="margin-top:15px;">
+        © <span id="year"></span> 2+ Odds Tips. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- FLOATING DOWNLOAD BAR -->
+  <div class="floating">
+    <div class="floating-info">
+      <strong>2+ Odds Tips</strong>
+      <span>FOOTBALL PREDICTIONS ⚽</span>
+    </div>
+
+    <a class="btn"
+       href="https://play.google.com/store/apps/details?id=daily.drawsexpert"
+       target="_blank" rel="noopener noreferrer">
+      DOWNLOAD ↗
+    </a>
+  </div>
+
+  <script>
+    // Automatically update the copyright year.
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Reveal sections as visitors scroll.
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealElements.forEach((element) => observer.observe(element));
+    } else {
+      revealElements.forEach((element) => element.classList.add("show"));
+    }
+
+    // Add a subtle navigation shadow after scrolling.
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector("nav");
+
+      nav.style.boxShadow = window.scrollY > 20
+        ? "0 8px 30px rgba(0,0,0,.25)"
+        : "none";
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
